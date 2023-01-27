@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <nav class="navbar">
+      <a href="index.html"
+        ><img class="logo" src="images/logo.png" alt="Creabots Logo"
+      /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()" aria-hidden="true"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#approach">APPROACH</a></li>
+          <li><a href="media.html">MEDIA</a></li>
+          <li><a href="#model">MODEL</a></li>
+          <li><a href="#team">TEAM</a></li>
+        </ul>
+      </div>
+
+      <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+    </nav>
     <div class="video">
-        <h2>Our Model Video</h2>
-        <video width="620" height="380" controls>
-            <source src="video/'Kitchen_robot.mp4" type="video/mp4">
-            Your browser d
-            oes not support the video tag.
-        </video>
+      <h2>Our Model Video</h2>
+      <video width="620" height="380" controls>
+        <source src="video/'Kitchen_robot.mp4" type="video/mp4" />
+        Your browser d oes not support the video tag.
+      </video>
     </div>
     <div class="gallery">
-        <h2>GALLERY</h2>
-        <div class="VR">
-            <img src="images/media/VR_1.jpg" alt="">
-            <img src="images/media/VR_2.jpg" alt="">
-            <img src="images/media/VR_3.jpg" alt="">
-            <img src="images/media/VR_4.jpg" alt="">
-        </div>
-
+      <h2>GALLERY</h2>
+      <div class="VR">
+        <img src="images/media/VR_1.jpg" alt="" />
+        <img src="images/media/VR_2.jpg" alt="" />
+        <img src="images/media/VR_3.jpg" alt="" />
+        <img src="images/media/VR_4.jpg" alt="" />
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
