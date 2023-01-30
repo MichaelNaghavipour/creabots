@@ -4,6 +4,12 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /*--------header----*/
 .header {
   min-height: 100vh;
@@ -602,6 +608,7 @@ nav .fa {
   padding: 10px 0;
   background-color: black;
   color: #fff;
+  margin-top: auto;
 }
 
 .footer h4 {
