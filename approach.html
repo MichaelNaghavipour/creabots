@@ -172,6 +172,43 @@
             width: 60px;
             height: 60px;
         }
+
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #454545;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
     </style>
 </head>
 
@@ -203,7 +240,7 @@
                         <!-- Product -->
                         <div class='figure__product' style='background-color: var(--color2)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>PRODUCT 01</h3>
+                                <h3 class='figure__productName'>Modelling</h3>
                                 <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
                                     convallis at tellus. Donec rutrum congue leo.</p>
                             </div>
@@ -244,7 +281,7 @@
                         <!-- Product -->
                         <div class='figure__product' style='background-color: var(--color3)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>PRODUCT 02</h3>
+                                <h3 class='figure__productName'>Taxonomy</h3>
                                 <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
                                     convallis at tellus. Donec rutrum congue leo.</p>
                             </div>
@@ -283,7 +320,7 @@
                         <!-- Product -->
                         <div class='figure__product' style='background-color: var(--color4)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>PRODUCT 03</h3>
+                                <h3 class='figure__productName'>Reinforcement Learning</h3>
                                 <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
                                     convallis at tellus. Donec rutrum congue leo.</p>
                             </div>
@@ -324,7 +361,7 @@
                         <!-- Product -->
                         <div class='figure__product figure__product--right' style='background-color: var(--color5)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>PRODUCT 01</h3>
+                                <h3 class='figure__productName'>Virtual Reality</h3>
                                 <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
                                     convallis at tellus. Donec rutrum congue leo.</p>
                             </div>
@@ -363,7 +400,7 @@
                         <!-- Product -->
                         <div class='figure__product figure__product--right' style='background-color: var(--color6)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>PRODUCT 02</h3>
+                                <h3 class='figure__productName'>OptiTrack</h3>
                                 <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
                                     convallis at tellus. Donec rutrum congue leo.</p>
                             </div>
@@ -400,7 +437,7 @@
                         <!-- Product -->
                         <div class='figure__product figure__product--right' style='background-color: var(--color7)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>PRODUCT 03</h3>
+                                <h3 class='figure__productName'>OpenAI</h3>
                                 <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
                                     convallis at tellus. Donec rutrum congue leo.</p>
                             </div>
@@ -435,6 +472,47 @@
             </div>
         </div>
 
+        <br><br>
+
+        <button class="collapsible">Modelling</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">Taxonomy</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">Reinforcement Learning</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">Virtual Reality</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">OptiTrack</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+        <button class="collapsible">OpenAI</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+        </div>
+
+        <br><br><br>
+
     </section>
 
     <!----Footer------->
@@ -449,6 +527,22 @@
         </div>
     </section>
 
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
