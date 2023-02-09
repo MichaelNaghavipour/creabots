@@ -373,6 +373,44 @@ nav .fa {
   padding: 10px;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.image-section {
+  display: flex;
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+}
+
+.image-section img {
+  height: 100%;
+  width: 33.33%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  padding: 10px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev {
+  margin-right: 20px;
+}
+
+.next {
+  margin-left: 20px;
+}
+
+
 /*--------Model----*/
 
 .model {

@@ -35,11 +35,16 @@
   </div>
   <div class="gallery">
     <h2>GALLERY</h2>
-    <div class="VR">
-      <img src="images/media/VR_1.jpg" alt="" />
-      <img src="images/media/VR_2.jpg" alt="" />
-      <img src="images/media/VR_3.jpg" alt="" />
-      <img src="images/media/VR_4.jpg" alt="" />
+    <div class="container">
+      <button class="btn prev">Previous</button>
+      <div class="image-section">
+        <img src="images/media/VR_1.jpg" alt="image1" />
+        <img src="images/media/VR_2.jpg" alt="image2" />
+        <img src="images/media/VR_3.jpg" alt="image3" />
+        <img src="images/media/VR_4.jpg" alt="image4" />
+        <img src="images/media/VR_1.jpg" alt="image5" />
+      </div>
+      <button class="btn next">Next</button>
     </div>
   </div>
 </body>
@@ -53,5 +58,25 @@
     28359 Bremen<br>
     Phone: 0421 218 - 644 50</p>
 </section>
+<script>
+  const images = document.querySelectorAll(".image-section img");
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+  let counter = 0;
+
+  nextBtn.addEventListener("click", function () {
+    counter++;
+    images.forEach((image) => {
+      image.style.transform = `translateX(-${counter * 33.33}%)`;
+    });
+  });
+
+  prevBtn.addEventListener("click", function () {
+    counter--;
+    images.forEach((image) => {
+      image.style.transform = `translateX(-${counter * 33.33}%)`;
+    });
+  });
+</script>
 
 </html>
