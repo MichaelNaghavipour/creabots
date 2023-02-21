@@ -228,6 +228,10 @@ nav .fa {
   transition: 0.5s;
 }
 
+.approach-col>p {
+  text-align: justify;
+}
+
 .approach-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
@@ -568,6 +572,11 @@ nav .fa {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
+
+}
+
+.modelo-wrapper {
+  border: solid 3px #6ee4eb
 }
 
 .team-img {
