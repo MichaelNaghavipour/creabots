@@ -445,21 +445,6 @@ nav .fa {
   border-radius: 0%;
 }
 
-.model-btn {
-  display: inline-block;
-  text-decoration: none;
-  color: rgb(245, 242, 242);
-  border: 1px solid rgb(24, 23, 23);
-  padding: 15px 50px;
-  margin-bottom: 50px;
-  font-size: 25px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-  border-radius: 15px;
-  background-color: rgb(53, 62, 62);
-}
-
 .model-btn:hover {
   border: 1px solid #6ee4eb;
   background: #6ee4eb;
