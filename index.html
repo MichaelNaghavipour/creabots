@@ -48,28 +48,21 @@
   <section class="overview">
     <h1 id="overview">Overview</h1>
     <p>
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It
-      has roots in a piece of classical Latin literature from 45 BC, making it
-      over 2000 years old. Richard McClintock, a Latin professor at
-      Hampden-Sydney College in Virginia, looked up one of the more obscure
-      Latin words, consectetur, from a Lorem Ipsum passage, and going through
-      the cites of the word in classical literature, discovered the
-      undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-      of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
-      Cicero, written in 45 BC. This book is a treatise on the theory of
-      ethics, very popular during the Renaissance. The first line of Lorem
-      Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section
-      1.10.32. There are many variations of passages of Lorem Ipsum available,
-      but the majority have suffered alteration in some form, by injected
-      humour, or randomised words which don't look even slightly believable.
-      If you are going to use a passage of Lorem Ipsum, you need to be sure
-      there isn't anything embarrassing hidden in the middle of text. All the
-      Lorem Ipsum generators on the Internet tend to repeat predefined chunks
-      as necessary, making this the first true generator on the Internet. It
-      uses a dictionary of over 200 Latin words, combined with a handful of
-      model sentence structures, to generate Lorem Ipsum which looks
-      reasonable. The generated Lorem Ipsum is therefore always free from
-      repetition, injected humour, or non-characteristic words etc.
+      The concept of affordances, introduced by J. J. Gibson, describes in the broadest sense, properties of objects and
+      environments which enable various actions to achieve certain effects.
+      With the growing fields of robotics and artificial intelligence, reinforcement learning (RL) in particular,
+      affordances have gained more and more attention as the ability to accurately describe and environment, potential
+      actions and the desired outcome of these actions is essential for developing and training a successful AI system.
+      There are many attempts at classifying affordances, with many focusing on more
+      theoretical levels or formalization's, as well as comparing different perspectives on affordances.
+      However while the theoretical description is important for the concept in general, only few works focus on the
+      computational execution. And of those few most still operate on a rather high abstraction level such as learning
+      intentions, symbolic representation.
+      Nonetheless transferring the results from simulation to the real world is easier said than done, as performance
+      often decreases during this transfer process. In this paper we explore what limits may be encountered when using
+      reinforcement learning for affordances, how well simulations compare to the real world and how these challenges
+      can be approached.
+      Specifically we focus on the physical motions required to execute an affordance from the perspective of the agent.
     </p>
   </section>
 
@@ -78,13 +71,23 @@
     <h1 id="approach">Our Approach</h1>
 
     <div class="approach-col">
-      <h3>Recording Data in VR Environment</h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius
-        nam dolor vel quidem natus et aperiam id obcaecati, iste excepturi
-        ab labore, nobis velit quasi, possimus voluptas sunt dolore!
+        Solving affordances is required in everyday tasks and the fact is that they are very complex.
+        There is little to no classification of what an affordance is or what actions are involved.
+        Therefore the lack of classification makes it a lot harder to solve or even identify affordances of different
+        objects in
+        software. Common solutions involve imitation learning and reinforcement learning, but these solutions have a lot
+        potential
+        but also various constraints which include computational limits, required sample size and sample generation but
+        also identifying
+        what should be trained as well as differences between the simulated environment and the real world.
+        Many machine learning solutions also provide black box solutions, solving the problem but providing only little
+        insight in understanding the problem or the solution.
+        To counter these issues we explore the limits of reinforcement learning in affordances and compare the
+        performance with executing affordance in VR and motion tracking. Moreover we propose a taxonomy for the
+        components making up the actions in an affordance.
       </p>
-      <a href="approach.html" class="app-btn">More</a>
+      <a href="approach.html" class="app-btn"> Read More</a>
     </div>
   </section>
 
@@ -118,52 +121,76 @@
         <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
           <div class="team-card">
             <div class="team-img-wrapper">
-              <img class="model-img" src="images/models/pot.svg" />
+              <div class='modelo-wrapper'>
+                <div style="width: 100%; padding-bottom: 56.25%; position:
+                      relative">
+                  <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe
+                      src="
+                      https://app.modelo.io/embedded/1628026685210886144?viewport=false&autoplay=false&autorotate=false&hideTools=false&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false"
+                      style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
+                      allowfullscreen></iframe> </div>
+                </div>
+              </div>
             </div>
             <div class="team-card-content">
-              <p class="text-blk name">Pot</p>
-              <button class="btn" style="width: 100%">
-                <i class="fa fa-download"></i> Download
-              </button>
+              <p class="text-blk name">fork</p>
             </div>
           </div>
         </div>
         <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
           <div class="team-card">
             <div class="team-img-wrapper">
-              <img class="model-img" src="images/models/spatula.svg" />
+              <div class='modelo-wrapper'>
+                <div style="width: 100%; padding-bottom: 56.25%; position:
+                      relative">
+                  <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe
+                      src="
+                      https://app.modelo.io/embedded/1628027266453340160?viewport=false&autoplay=false&autorotate=false&hideTools=false&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false"
+                      style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
+                      allowfullscreen></iframe> </div>
+                </div>
+              </div>
             </div>
             <div class="team-card-content">
-              <p class="text-blk name">Spatula</p>
-              <button class="btn" style="width: 100%">
-                <i class="fa fa-download"></i> Download
-              </button>
+              <p class="text-blk name">Cutting Board</p>
             </div>
           </div>
         </div>
         <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
           <div class="team-card">
             <div class="team-img-wrapper">
-              <img class="model-img" src="images/models/pan.svg" />
+              <div class='modelo-wrapper'>
+                <div style="width: 100%; padding-bottom: 56.25%; position:
+                      relative">
+                  <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe
+                      src="
+                      https://app.modelo.io/embedded/1628027453213114368?viewport=false&autoplay=false&autorotate=false&hideTools=false&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false"
+                      style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
+                      allowfullscreen></iframe> </div>
+                </div>
+              </div>
             </div>
             <div class="team-card-content">
-              <p class="text-blk name">Pan</p>
-              <button class="btn" style="width: 100%">
-                <i class="fa fa-download"></i> Download
-              </button>
+              <p class="text-blk name">Postcard</p>
             </div>
           </div>
         </div>
         <div class="responsive-cell-block wk-desk-3 wk-mobile-12 wk-tab-4 wk-ipadp-4 team-card-container">
           <div class="team-card">
             <div class="team-img-wrapper">
-              <img class="model-img" src="images/models/plate.svg" />
+              <div class='modelo-wrapper'>
+                <div style="width: 100%; padding-bottom: 56.25%; position:
+                      relative">
+                  <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe
+                      src="
+                      https://app.modelo.io/embedded/1628026685210886144?viewport=false&autoplay=false&autorotate=false&hideTools=false&showBIM=false&showBBoxSize=false&showKooRender=false&showSettings=false"
+                      style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen
+                      allowfullscreen></iframe> </div>
+                </div>
+              </div>
             </div>
             <div class="team-card-content">
-              <p class="text-blk name">Plate</p>
-              <button class="btn" style="width: 100%">
-                <i class="fa fa-download"></i> Download
-              </button>
+              <p class="text-blk name">fork</p>
             </div>
           </div>
         </div>
