@@ -338,6 +338,17 @@ nav .fa {
   color: rgb(12, 11, 11);
 }
 
+/*--------Demo----*/
+.demo {
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.demo>h1 {
+  margin-bottom: 20px;
+}
+
 /*--------Media page----*/
 .videos {
   width: 80%;
