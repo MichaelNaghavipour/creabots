@@ -265,22 +265,24 @@ nav .fa {
 
 /*--------Media----*/
 .media {
-  width: 80%;
+  width: 90%;
   margin: auto;
   text-align: center;
   padding-top: 50px;
 }
 
 .media-col {
-  flex-basis: 45%;
-  border-radius: 10px;
+  flex-basis: 24%;
+  border-radius: 20px;
   margin-bottom: 30px;
+  padding-right: 6px;
   position: relative;
   overflow: hidden;
 }
 
 .media-col img {
   width: 100%;
+  height: 230px;
   display: block;
 }
 
@@ -371,21 +373,7 @@ nav .fa {
   position: relative;
 }
 
-.slider .owl-item.active.center .slider-card {
-  transform: scale(1.15);
-  opacity: 1;
-  background: #ff9966;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom,
-      #ff5e62,
-      #ff9966);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom,
-      #ff5e62,
-      #ff9966);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #fff;
-}
+
 
 .slider-card {
   background: #fff;
@@ -434,13 +422,11 @@ nav .fa {
   outline: none;
 }
 
-.owl-dots .owl-dot.active {
-  background: #f44336 !important;
-}
 
 .card-img-top {
   height: 300px;
 }
+
 
 
 
