@@ -32,6 +32,7 @@
         @media (max-width: 1024px) {
             .container {
                 display: none;
+
             }
         }
 
@@ -214,6 +215,7 @@
             overflow: hidden;
             transition: max-height 0.2s ease-out;
             background-color: #f1f1f1;
+            text-align: left;
         }
     </style>
 </head>
@@ -247,9 +249,8 @@
                         <!-- Product -->
                         <div class='figure__product' style='background-color: var(--color2)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>Modelling</h3>
-                                <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
-                                    convallis at tellus. Donec rutrum congue leo.</p>
+                                <h3 class='figure__productName'>Taxonomy Affordances</h3>
+                                <p class='figure__productDesc'>Propose a taxonomy for affordance components</p>
                             </div>
                             <div class='figure__productIconBox'>
                                 <svg class='figure__productIcon' version='1.2' baseProfile='tiny-ps'
@@ -288,9 +289,10 @@
                         <!-- Product -->
                         <div class='figure__product' style='background-color: var(--color3)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>Taxonomy</h3>
-                                <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
-                                    convallis at tellus. Donec rutrum congue leo.</p>
+                                <h3 class='figure__productName'>Reinforcement Learning</h3>
+                                <p class='figure__productDesc'>Exploring what kind of
+                                    affordance properties may cause issues in regards to the reinforcement learning.
+                                </p>
                             </div>
                             <div class='figure__productIconBox'>
                                 <svg class='figure__productIcon' version='1.2' baseProfile='tiny-ps'
@@ -327,9 +329,10 @@
                         <!-- Product -->
                         <div class='figure__product' style='background-color: var(--color4)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>Reinforcement Learning</h3>
-                                <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
-                                    convallis at tellus. Donec rutrum congue leo.</p>
+                                <h3 class='figure__productName'>3D Modelling</h3>
+                                <p class='figure__productDesc'>3D models are designed to perform different affordances
+                                    in Virtual Reality as well as
+                                    Motion Tracking.</p>
                             </div>
                             <div class='figure__productIconBox'>
                                 <svg class='figure__productIcon' version='1.2' baseProfile='tiny-ps'
@@ -369,8 +372,8 @@
                         <div class='figure__product figure__product--right' style='background-color: var(--color5)'>
                             <div class='figure__productContent'>
                                 <h3 class='figure__productName'>Virtual Reality</h3>
-                                <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
-                                    convallis at tellus. Donec rutrum congue leo.</p>
+                                <p class='figure__productDesc'>Comparing the accuracy of the physics engine to the real
+                                    world.</p>
                             </div>
                             <div class='figure__productIconBox'>
                                 <svg class='figure__productIcon' version='1.2' baseProfile='tiny-ps'
@@ -407,9 +410,10 @@
                         <!-- Product -->
                         <div class='figure__product figure__product--right' style='background-color: var(--color6)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>OptiTrack</h3>
-                                <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
-                                    convallis at tellus. Donec rutrum congue leo.</p>
+                                <h3 class='figure__productName'>Motion Tracking</h3>
+                                <p class='figure__productDesc'>Using advanced algorithms and image processing techniques
+                                    to track and record the movement of
+                                    reflective markers.</p>
                             </div>
                             <div class='figure__productIconBox'>
                                 <svg class='figure__productIcon' version='1.2' baseProfile='tiny-ps'
@@ -444,9 +448,10 @@
                         <!-- Product -->
                         <div class='figure__product figure__product--right' style='background-color: var(--color7)'>
                             <div class='figure__productContent'>
-                                <h3 class='figure__productName'>OpenAI</h3>
-                                <p class='figure__productDesc'>Vivamus magna justo, lacinia eget consectetur sed,
-                                    convallis at tellus. Donec rutrum congue leo.</p>
+                                <h3 class='figure__productName'>Data Evaluation</h3>
+                                <p class='figure__productDesc'>The data recorded during motion
+                                    capture relys heavily on the proper preparation of the object.
+                                </p>
                             </div>
                             <div class='figure__productIconBox'>
                                 <svg class='figure__productIcon' version='1.2' baseProfile='tiny-ps'
@@ -481,41 +486,54 @@
 
         <br><br>
 
-        <button class="collapsible">Modelling</button>
+        <button class="collapsible">Taxonomy Affordances</button>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
-        </div>
-        <button class="collapsible">Taxonomy</button>
-        <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>Based on our observations we propose the taxonomy for components, which are required to describe the
+                physical motions to fulfill an affordance.
+                An affordance can have one or multiple of these components, which may be fulfilled at the same time or
+                sequentially.
+                While not all classes of components could be included in the experiments we evaluated the taxonomy by
+                referencing a list of over hundred affordance and testing whether we were able to describe the
+                affordances based on this taxonomy.
+                We did not find any exceptions to the taxonomy, therefore we consider it to be sufficiently complete for
+                future use, even though further verification is recommended.
+            </p>
         </div>
         <button class="collapsible">Reinforcement Learning</button>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>We used the OpenAI environment to explore what kind of
+                affordance properties may cause issues in regards to the reinforcement learning
+                process itself but also in relation to the physics engine used.</p>
+        </div>
+        <button class="collapsible">3D Modelling</button>
+        <div class="content">
+            <p>More than thirty 3D models are designed to perform different affordances in Virtual Reality as well as
+                Motion Tracking. They are created by the open source software, Blender.</p>
         </div>
         <button class="collapsible">Virtual Reality</button>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>The Unreal Environment is used to compare the accuracy of the physics engine to the real world and
+                evaluate whether or not simulated environments are inherently ill suited to certain kinds of task and
+                therefore training a system in these task would be unreasonable without real world data.
+            </p>
         </div>
-        <button class="collapsible">OptiTrack</button>
+        <button class="collapsible">Motion Tracking</button>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>OptiTrack Motive is a motion capture software developed by OptiTrack, which is used for capturing and
+                analyzing the movement of objects or people in 3D space.
+                Motive uses advanced algorithms and image processing techniques to track and record the movement of
+                reflective markers placed on the subject or object being tracked.
+                When combined with Unreal Engine, it offers a solution to create virtual environments that can simulate
+                real-life scenarios with high precision.
+
+
+            </p>
         </div>
-        <button class="collapsible">OpenAI</button>
+        <button class="collapsible">Data Evaluation</button>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <p>The accuracy and quality of data recorded during motion capture rely heavily on the proper preparation of
+                the object or individual, which includes the precise attachment of markers.
+            </p>
         </div>
 
         <br><br><br>
