@@ -39,12 +39,88 @@
   </nav>
   <div class="videos">
     <h2 class="text-center fs-1 text text-info fw-bolder display-1 text-decoration-underline mb-2">
-      Our Model Video
+      Our Final Video
     </h2>
     <video width="620" height="380" controls>
       <source src="video/3d modeling process_for website.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
+  </div>
+
+  <!--video gallery-->
+
+  <div class="content">
+
+    <div class="section-header">
+      <h1>Affordences Video Gallery</h1>
+    </div>
+
+    <div class="video-gallery">
+      <div class="gallery-item ">
+        <img src="images/media/RL/balancing object.png" alt="Olympic National Park" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>BALANCING OBJECT</h2>
+          <p>On a Tray</p>
+          <!--</div>-->
+          <a class="vimeo-popup" href="video/affordance video/balance_c.mp4"></a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/media/vroptitrack/covering_pot.png" alt="Olympic National Park" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>COVERING A POT</h2>
+          <p></p>
+          <!--</div>-->
+          <a class="vimeo-popup" href="video/affordance video/Cover_c.mp4"></a>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="images/media/vroptitrack/flipping_toast.png" class="north-cascades-img"
+          alt="North Cascades National Park" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>FLIPPING OBJECT</h2>
+          <p>In a Pan</p>
+          <!--</div>-->
+          <a class="vimeo-popup" href="video/affordance video/flip_c.mp4"></a>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/media/RL/RL-1.png" class="north-cascades-img" alt="North Cascades National Park" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>INSERT CARD</h2>
+          <p>In Mailbox</p>
+          <!--</div>-->
+          <a class="vimeo-popup" href="video/affordance video/post_c.mp4"></a>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/media/RL/water_liquid.png" class="north-cascades-img" alt="North Cascades National Park" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>POURING LIQUIDS</h2>
+          <p></p>
+          <!--</div>-->
+          <a class="vimeo-popup" href="video/affordance video/pour_c.mp4"></a>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/media/RL/RL-8.png" class="north-cascades-img" alt="North Cascades National Park" />
+        <div class="gallery-item-caption">
+          <!--<div>-->
+          <h2>PUZZLE ASSEMBLY</h2>
+          <p></p>
+          <!--</div>-->
+          <a class="vimeo-popup" href="video/affordance video/puzzle_c.mp4"></a>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 
@@ -523,6 +599,17 @@
           items: 3,
         },
       },
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".video-gallery").magnificPopup({
+        delegate: "a",
+        type: "iframe",
+        gallery: {
+          enabled: true
+        }
+      });
     });
   </script>
 
