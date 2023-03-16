@@ -49,21 +49,17 @@
   <section class="overview">
     <h1 id="overview">Overview</h1>
     <p>
-      The concept of affordances, introduced by J. J. Gibson, describes in the broadest sense, properties of objects and
-      environments which enable various actions to achieve certain effects.
-      With the growing fields of robotics and artificial intelligence, reinforcement learning (RL) in particular,
-      affordances have gained more and more attention as the ability to accurately describe and environment, potential
-      actions and the desired outcome of these actions is essential for developing and training a successful AI system.
-      There are many attempts at classifying affordances, with many focusing on more
-      theoretical levels or formalization's, as well as comparing different perspectives on affordances.
-      However while the theoretical description is important for the concept in general, only few works focus on the
-      computational execution. And of those few most still operate on a rather high abstraction level such as learning
-      intentions, symbolic representation.
-      Nonetheless transferring the results from simulation to the real world is easier said than done, as performance
-      often decreases during this transfer process. In this paper we explore what limits may be encountered when using
-      reinforcement learning for affordances, how well simulations compare to the real world and how these challenges
-      can be approached.
-      Specifically we focus on the physical motions required to execute an affordance from the perspective of the agent.
+      Affordances are inherent properties of objects and environments that enable certain actions to be executed. It is
+      a concept originating from psychology that has gained increased attention in robotics as it provides a way to
+      interpret environments and optimise planning and execution of actions. At the same time, reinforcement learning
+      has become a crucial part of problem solving in robotics as well. In this paper, we explore the limitations of
+      reinforcement learning in the context of affordances. We specifically focus on the physical execution of
+      affordances and show that they provide rather complex situations—proving to be quite difficult for reinforcement
+      learning in certain cases. We also argue that the challenges can be overcome by splitting affordances into simpler
+      components and propose a taxonomy of these components to accommodate this concept. Finally, we explore whether or
+      not virtual environments are suited to simulate real world affordances in the first place. We come to the
+      conclusion that, while they are not inherently ill-suited, virtual environments do encounter some limitations that
+      need to be accounted for when it is employed for real world simulation.
     </p>
   </section>
 
@@ -83,20 +79,18 @@
     <h1 id="approach">Our Approach</h1>
     <div class="approach-col">
       <p>
-        Solving affordances is required in everyday tasks and the fact is that they are very complex.
-        There is little to no classification of what an affordance is or what actions are involved.
-        Therefore the lack of classification makes it a lot harder to solve or even identify affordances of different
-        objects in
-        software. Common solutions involve imitation learning and reinforcement learning, but these solutions have a lot
-        potential
-        but also various constraints which include computational limits, required sample size and sample generation but
-        also identifying
-        what should be trained as well as differences between the simulated environment and the real world.
-        Many machine learning solutions also provide black box solutions, solving the problem but providing only little
-        insight in understanding the problem or the solution.
-        To counter these issues we explore the limits of reinforcement learning in affordances and compare the
-        performance with executing affordance in VR and motion tracking. Moreover we propose a taxonomy for the
-        components making up the actions in an affordance.
+        For the experiments we selected various affordances and implemented them in two environment.
+        The first is an OpenAI Gymnasium environment with Mujoco and PyBullet as the physics engine, along with an
+        implementation of DQN and PPO for learning algorithm.
+        The other is an Unreal Environment in virtual reality, as well as an motion tracking setup, via the use of
+        OptiTrack Technology.
+        We used the OpenAI environment to explore what kind of affordance properties may cause issues in regards to the
+        reinforcement learning process itself but also in relation to the physics engine used.
+        Based on our observations we propose a taxonomy for affordance components which are required to achieve the
+        desired end state for fulfilling an affordance.
+        The Unreal Environment is used to compare the accuracy of the physics engine to the real world and evaluate
+        whether or not simulated environments are inherently ill suited to certain kinds of task and therefore training
+        a system in these task would be unreasonable without real world data.
       </p>
       <a href="approach.html" class="app-btn"> Read More</a>
     </div>

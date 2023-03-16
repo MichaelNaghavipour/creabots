@@ -232,6 +232,14 @@ nav .fa {
   text-align: justify;
 }
 
+.content>ul {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
 .approach-col:hover {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
