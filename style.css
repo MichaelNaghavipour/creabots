@@ -175,7 +175,7 @@ nav .fa {
 
 /*--------Overview----*/
 .overview {
-  width: 80%;
+  width: 700px;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -200,7 +200,7 @@ nav .fa {
 
 /*--------Approach----*/
 .approach {
-  width: 80%;
+  width: 700px;
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -229,6 +229,7 @@ nav .fa {
 
 .approach-col>p {
   text-align: justify;
+  color: black;
 }
 
 .content>ul {
@@ -370,17 +371,13 @@ nav .fa {
   display: block;
   margin: 1em auto;
   width: 80%;
-  height: calc(0.5625 * 80vw);
-  max-width: 800px;
-  min-width: 320px;
+  height: auto;
 }
 
 .slider {
   margin-bottom: 30px;
   position: relative;
 }
-
-
 
 .slider-card {
   background: #fff;
@@ -436,6 +433,7 @@ nav .fa {
 
 /*video*/
 .section-header {
+  margin: 40px 0 30px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1424,6 +1422,10 @@ nav .fa {
   font-weight: 600;
 }
 
+.footer p {
+  color: #dddddd
+}
+
 .icons .fa {
   color: #369397;
   margin: 0 13px;
@@ -1527,5 +1529,15 @@ nav .fa {
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .approach {
+    width: 80%;
+  }
+
+  .overview {
+    width: 80%;
   }
 }

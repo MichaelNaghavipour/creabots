@@ -214,8 +214,8 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="index.html#demo">DEMO</a></li>
-                <li><a href="media.html">MEDIA</a></li>
-                <li><a href="model.html">MODEL</a></li>
+                <li><a href="media.html">ASSETS</a></li>
+                <li><a href="model.html">MODELS</a></li>
                 <li><a href="index.html#team">TEAM</a></li>
                 <li><a href="reference.html">REFERENCE</a></li>
             </ul>
@@ -233,7 +233,9 @@
         <div class="content">
             <p>Based on our observations, we propose the taxonomy for components, which are required to describe the
                 physical motions to fulfil an affordance. An affordance can have one or multiple of these
-                components, which may be fulfilled at the same time or sequentially. While not all classes of components
+                components, which may be fulfilled at the same time or sequentially.
+                <br><br>
+                While not all classes of components
                 could be included in the experiments, we evaluated the taxonomy by referencing a list of over hundred
                 affordances and testing whether we were able to describe the affordances based on this taxonomy. We
                 did not find any exceptions to the taxonomy, therefore, we consider it to be sufficiently complete for
@@ -247,6 +249,7 @@
                 Instead, we tried to keep the reward functions as general as possible, only using the successful
                 end-state of the affordance (i.e. the pot is covered or the card is inside the box) to simulate a
                 generic approach to affordance learning.
+                <br><br>
 
                 There were a few more affordances taken into consideration for the experiments, however, most were
                 dropped due to limited resources and time limitations on implementation.
@@ -257,7 +260,7 @@
                 While the chain by itself could be handled somewhat sufficiently, as soon as the agent gained control
                 over any part of the chain, the behaviour became unpredictable and the joint connection seemed to be
                 ineffective.
-
+                <br><br>
                 When comparing the two physics engines, MuJoCo had a lot of tunnelling between objects (i.e. the toast
                 would simply drop through the pan).
                 Using internal primitives instead of external objects solved these issues; although, in many cases, it
@@ -266,6 +269,7 @@
                 between objects.
                 While tunnelling could also be seen in PyBullet, it was only encountered at rather large simulation step
                 sizes, which is expected.
+                <br><br>
                 All-in-all, we found that PyBullet was a lot more stable and predictable, as well as more accessible
                 thanks to more extensive documentation.
                 Unfortunately, this stability came at the cost of speed, as the training took about 2-3 times as long
@@ -277,7 +281,8 @@
         <button class="collapsible">3D Modelling</button>
         <div class="content">
             <p>More than thirty 3D models are designed to perform different affordances in Virtual Reality as well as
-                Motion Tracking. They are created by the open source software, Blender.</p>
+                Motion Tracking. The objects were modelled after the measurements of their real world counterparts. They
+                are created by the open source software, Blender.</p>
         </div>
         <button class="collapsible">Virtual Reality (VR)</button>
         <div class="content">
@@ -286,9 +291,9 @@
                 controllers.
                 To ensure that the environments of virtual reality scenes and OptiTrack scenes properly relate to each
                 other, the scene's dimensions were measured beforehand and applied to the virtual scene.
-                Likewise, the objects were modelled after the measurements of their real world counterparts.
                 One major issue with the involved objects is that most of them were non-convex, as this property is
                 quite common with household objects.
+                <br><br>
                 Unfortunately, the PhysX Engine can, just like MuJoCo and PyBullet, only handle convex objects.
                 Since a pure convex hull would not be accurate enough for many of our objects, convex decomposition was
                 necessary.
@@ -296,6 +301,7 @@
                 performance.
                 As a solution, we had to decompose the objects manually in blender, which resulted in more uniform
                 colliders, improving not only the performance, but also the collision detection in the process.
+                <br><br>
                 Finally, it had to be ensured that the starting position of the involved objects were consistent with
                 the OptiTrack setup, which was achieved by marking key positions in the OptiTrack setup with tape---so
                 that they can easily be recreated.
@@ -311,16 +317,15 @@
                 reflective markers placed on the subject or object being tracked.
                 When combined with Unreal Engine, it offers a solution to create virtual environments that can simulate
                 real-life scenarios with high precision.
-
+                <br><br>
                 For the experiments, we used OptiTrack Motive 2.0.1, which was operated using a combination of cameras
                 including 13 Primex 13 and 4 Primex 41.
                 The experiments were conducted on a computer system comprising an Intel i7-4790 processor with 4 cores
                 clocked at 3.6 GHz, 32 GB of 3600 MHz DDR4 RAM, and a Nvidia Titan V 12 GB graphics card.
                 The system was integrated with Unreal Engine 4.27.
-
+                <br><br>
                 The initial step in utilising the OptiTrack system involves the precise setup of the tracking area by
                 positioning the cameras in appropriate locations and calibrating them to ensure accurate tracking.
-
                 This calibration process is critical to achieving reliable and reproducible tracking results.
             </p>
         </div>
